@@ -52,6 +52,7 @@ sora
 claude
 Anthropic
 
+Apple
 iphone
 ipad
 mac
@@ -62,7 +63,6 @@ ai
 人工智能
 
 自动驾驶
-
 机器人
 
 中国
@@ -71,19 +71,21 @@ ai
 韩国
 
 芯片
-光刻机
-
 科技
 核能
 
 财经
 股市
+
 上证指数
 深证成指
+
 恒生科技
 拓普集团
+
 A股
 美股
 港股
+
 纳指ETF
 ETF
