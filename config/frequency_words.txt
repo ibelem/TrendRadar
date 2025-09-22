@@ -1,10 +1,22 @@
+财经
+股市
+
+上证指数
+深证成指
+
+恒生科技
+拓普集团
+
+A股
+美股
+港股
+
+纳指ETF
+ETF
+
 华为
 鸿蒙
 HarmonyOS
-任正非
-
-比亚迪
-王传福
 
 大疆
 DJI
@@ -17,6 +29,8 @@ bytedance
 
 微软
 Microsoft
+Phi
+Windows ML
 
 英伟达
 NVIDIA
@@ -27,6 +41,7 @@ AMD
 谷歌
 google
 gemini
+Gemma
 deepmind
 
 英特尔
@@ -42,12 +57,10 @@ Qualcomm
 Arm
 
 DeepSeek
-Phi
-Gemini
 
-chatgpt
 openai
-sora
+chatgpt
+gpt
 
 claude
 Anthropic
@@ -65,27 +78,22 @@ ai
 自动驾驶
 机器人
 
-中国
-美国
-日本
-韩国
+HuggingFace
 
-芯片
-科技
-核能
+电影机
+相机
+视频机
+SONY
+索尼
+Nikon
+尼康
+Canon
+佳能
 
-财经
-股市
-
-上证指数
-深证成指
-
-恒生科技
-拓普集团
-
-A股
-美股
-港股
-
-纳指ETF
-ETF
+手持摄影
+Vlog
+运动相机
+全景相机
+Dji
+大疆
+GoPro
