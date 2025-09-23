@@ -222,12 +222,12 @@ def get_beijing_time():
 
 def format_date_folder():
     """格式化日期文件夹"""
-    return get_beijing_time().strftime("%Y年%m月%d日")
+    return get_beijing_time().strftime("%Y-%m-%d")
 
 
 def format_time_filename():
     """格式化时间文件名"""
-    return get_beijing_time().strftime("%H时%M分")
+    return get_beijing_time().strftime("%H:%M")
 
 
 def clean_title(title: str) -> str:
@@ -2626,14 +2626,14 @@ def split_content_into_batches(
             if format_type == "wework":
                 if count >= 10:
                     word_header = (
-                        f"🔥 {sequence_display} **{word}** : **{count}**\n\n"
+                        f""
                     )
                 elif count >= 5:
                     word_header = (
-                        f"📈 {sequence_display} **{word}** : **{count}**\n\n"
+                        f""
                     )
                 else:
-                    word_header = f"📌 {sequence_display} **{word}** : {count}\n\n"
+                    word_header = f""
             elif format_type == "telegram":
                 if count >= 10:
                     word_header = f"🔥 {sequence_display} {word} : {count} 条\n\n"
@@ -2734,7 +2734,7 @@ def split_content_into_batches(
             if i < len(report_data["stats"]) - 1:
                 separator = ""
                 if format_type == "wework":
-                    separator = f"\n\n\n\n"
+                    separator = f"\n\n"
                 elif format_type == "telegram":
                     separator = f"\n\n"
                 elif format_type == "dingtalk":
@@ -2751,7 +2751,7 @@ def split_content_into_batches(
     if report_data["new_titles"]:
         new_header = ""
         if format_type == "wework":
-            new_header = f"\n\n🆕 **新增** ({report_data['total_new_count']})\n\n"
+            new_header = f""
         elif format_type == "telegram":
             new_header = (
                 f"\n\n🆕 本次新增热点新闻 (共 {report_data['total_new_count']} 条)\n\n"
@@ -2776,7 +2776,7 @@ def split_content_into_batches(
         for source_data in report_data["new_titles"]:
             source_header = ""
             if format_type == "wework":
-                source_header = f"{len(source_data['titles'])}:\n\n"
+                source_header = f""
             elif format_type == "telegram":
                 source_header = f"{source_data['source_name']} ({len(source_data['titles'])} 条):\n\n"
             elif format_type == "dingtalk":
@@ -2865,7 +2865,7 @@ def split_content_into_batches(
     if report_data["failed_ids"]:
         failed_header = ""
         if format_type == "wework":
-            failed_header = f"\n\n⚠️ **获取失败：**\n\n"
+            failed_header = f"\n\n⚠️ **失败：**\n\n"
         elif format_type == "telegram":
             failed_header = f"\n\n⚠️ 数据获取失败的平台：\n\n"
         elif format_type == "dingtalk":
