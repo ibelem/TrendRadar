@@ -1468,7 +1468,7 @@ def format_title_for_platform(
         else:
             formatted_title = cleaned_title
 
-        title_prefix = "🆕 " if title_data.get("is_new") else ""
+        title_prefix = " " if title_data.get("is_new") else ""
 
         if show_source:
             result = f"[{title_data['source_name']}] {title_prefix}{formatted_title}"
@@ -1476,11 +1476,11 @@ def format_title_for_platform(
             result = f"{title_prefix}{formatted_title}"
 
         if rank_display:
-            result += f" {rank_display}"
+            result += f""
         if title_data["time_display"]:
-            result += f" - {title_data['time_display']}"
+            result += f""
         if title_data["count"] > 1:
-            result += f" ({title_data['count']}次)"
+            result += f""
 
         return result
 
@@ -2672,7 +2672,7 @@ def split_content_into_batches(
                 else:
                     formatted_title = f"{first_title_data['title']}"
 
-                first_news_line = f"  1. {formatted_title}\n"
+                first_news_line = f"{formatted_title}\n"
                 if len(stat["titles"]) > 1:
                     first_news_line += "\n"
 
@@ -2713,7 +2713,7 @@ def split_content_into_batches(
                 else:
                     formatted_title = f"{title_data['title']}"
 
-                news_line = f"  {j + 1}. {formatted_title}\n"
+                news_line = f"{formatted_title}\n"
                 if j < len(stat["titles"]) - 1:
                     news_line += "\n"
 
